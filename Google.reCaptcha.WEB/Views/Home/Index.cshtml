@@ -1,0 +1,17 @@
+﻿@using GoogleRecaptchaMvc
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>GoogleRecaptcha</title>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <div>
+            @Html.RecaptchaV2("{YourSiteKey}")
+        </div>
+    }
+</body>
+</html>
